@@ -63,6 +63,11 @@ lot of different data into your own application for display.
    is the CakePHP way of doing things.
 
 
+API Documentation
+-----------------
+http://balthisar.github.io/JDWordpress
+
+
 Quick Installation
 ------------------
 
