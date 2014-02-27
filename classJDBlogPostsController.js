@@ -15,5 +15,8 @@ var classJDBlogPostsController =
     [ "tocForTaxonomyType", "classJDBlogPostsController.html#aeef9dfc43bf56f66ac2e9fee0b7514b7", null ],
     [ "tocRSSForTaxonomyType", "classJDBlogPostsController.html#a8c08b69d12af364ea1c0da46e0f25cb6", null ],
     [ "tocRecent", "classJDBlogPostsController.html#a06a80f82cabbfd454f521eb87aabf315", null ],
-    [ "tocTaxonomyArticles", "classJDBlogPostsController.html#a47244b184d19cce49caec0f5e9948695", null ]
+    [ "tocTaxonomyArticles", "classJDBlogPostsController.html#a47244b184d19cce49caec0f5e9948695", null ],
+    [ "$layout", "classJDBlogPostsController.html#a2b0d08e73a90b9443ce37506b7c6a544", null ],
+    [ "$components", "classJDBlogPostsController.html#a2409c247baf67a1d4c6b9a1789cfc088", null ],
+    [ "$helpers", "classJDBlogPostsController.html#aeeccfcd4e2765b8469c41f93ec023ee9", null ]
 ];

@@ -13,5 +13,12 @@ var classJDBlogPost =
     [ "getTaxonomyPostsAsArchives", "classJDBlogPost.html#aebf9b8f5b9a2694a35f9b83c4673618f", null ],
     [ "getAllPostsForTaxonomyByTerm", "classJDBlogPost.html#a9bfc0421868edb5b6c77b577e84296b6", null ],
     [ "getTermsForTaxonomy", "classJDBlogPost.html#a76dc337af560ffa50385376c437c4069", null ],
-    [ "getNameForTaxonomySlug", "classJDBlogPost.html#a50c27901fc57677b278db8eda83da89d", null ]
+    [ "getNameForTaxonomySlug", "classJDBlogPost.html#a50c27901fc57677b278db8eda83da89d", null ],
+    [ "prepareSQLDump", "classJDBlogPost.html#a13fad18f0f07290f0c1fd3d4b425db5c", null ],
+    [ "$useTable", "classJDBlogPost.html#a9e14b6232ac8c46228003d19140f1831", null ],
+    [ "$primaryKey", "classJDBlogPost.html#a927b0256b942a3ee89485f2649af7981", null ],
+    [ "$useDbConfig", "classJDBlogPost.html#a8e2b18e53355b24d337026fb45e56dda", null ],
+    [ "$displayField", "classJDBlogPost.html#a6ce857446952a805d9ac738453eb09dd", null ],
+    [ "$order", "classJDBlogPost.html#a20d0f3c3de8ac827c9d513b70d8f47a6", null ],
+    [ "$belongsTo", "classJDBlogPost.html#a1578683643768f402aa354aabf0c1c31", null ]
 ];

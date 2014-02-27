@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>JDWordpress: Main Page</title>
+<title>JDMultipage: Main Page</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,10 +24,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">JDWordpress
+   <div id="projectname">JDMultipage
    &#160;<span id="projectnumber">v.2014-02-11</span>
    </div>
-   <div id="projectbrief">Wordpress display plugin for CakePHP</div>
+   <div id="projectbrief">Multipage plugin for CakePHP</div>
   </td>
  </tr>
  </tbody>
@@ -52,19 +52,19 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="headertitle">
-<div class="title">JDWordpress Documentation</div>  </div>
+<div class="title">JDMultipage Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>#!md </p>
 <h1>JDWordpress Plugin for CakePHP </h1>
 <p>©2014 by Jim Derry and balthisar.com</p>
 <h2>Purpose </h2>
-<p>This plugin lets you integrate your Wordpress database into your CakePHP site with minimum effort. It uses none of Wordpress’ functionality to perform any of its work; it’s completely independent and requires only Wordpress’s database.</p>
-<p>Oh, unlike Wordpress, you can write your articles in MarkdownExtra format. And, if you like, any source code can be syntax highlighted with the built-in GeSHi.</p>
-<p>Note that there’s currently <em>not</em> any support for Wordpress’ comments system or user management at all. This is a design feature and not a bug or oversight, since presumably you have an existing CakePHP application and want to use your own security and user management systems.</p>
-<p>Also there’s no support for generating Wordpress content. You should use Wordpress and its excellent tools for that, otherwise why have Wordpress at all? We’re only interested in showing Wordpress’ data.</p>
+<p>This plugin lets you integrate your WordPress database into your CakePHP site with minimum effort. It uses none of WordPress’ functionality to perform any of its work; it’s completely independent and requires only WordPress’s database.</p>
+<p>Oh, unlike WordPress, you can write your articles in MarkdownExtra format. And, if you like, any source code can be syntax highlighted with the built-in GeSHi.</p>
+<p>Note that there’s currently <em>not</em> any support for WordPress’ comments system or user management at all. This is a design feature and not a bug or oversight, since presumably you have an existing CakePHP application and want to use your own security and user management systems.</p>
+<p>Also there’s no support for generating WordPress content. You should use WordPress and its excellent tools for that, otherwise why have WordPress at all? We’re only interested in showing WordPress’ data.</p>
 <h2>Some Cool Features </h2>
-<p>The most prominent feature is that you don’t have to run Wordpress as your front-end; you can run your CakePHP site and pull in content wherever you want it. Because JDWordpress only requires the database from Wordpress, you can run Wordpress backend in another directory, subdomain, or even other machine.</p>
+<p>The most prominent feature is that you don’t have to run WordPress as your front-end; you can run your CakePHP site and pull in content wherever you want it. Because JDWordpress only requires the database from WordPress, you can run WordPress backend in another directory, subdomain, or even other machine.</p>
 <p>Live support for index pages showing all tags, all categories, all articles. Programmatic support for all taxonomies and a rich set of structures and elements for displaying them on your own site.</p>
 <p>"Magic" view method that accepts article slugs, a quantity of articles, category slugs, author slugs, tag slugs &ndash; whatever &ndash; and delivers the right page with the right results. No more forcing your users to type URIs with <code>/tag/cool</code>, <code>category/swimming</code>, <code>author/balthisar</code>, or <code>article/2014/02/01/my-cool-swimming-article-by-balthisar</code>.</p>
 <p>Aside from whole blog pages, JDWordpress offers three ways to pull a lot of different data into your own application for display.</p>
@@ -73,12 +73,14 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>The Helper provides several methods that can pull data and provide a rendered element on demand for any of your application’s pages that you wish. You probably shouldn't use the helper for this, but they’re quick and easy to use during development.</li>
 <li>The component can be used in your own AppController to make any data available to any or all of your views, and you can render this data easily with built-in or your own view elements. This is the CakePHP way of doing things.</li>
 </ol>
+<h2>API Documentation </h2>
+<p><a href="http://balthisar.github.io/JDWordpress">http://balthisar.github.io/JDWordpress</a></p>
 <h2>Quick Installation </h2>
 <ol type="1">
 <li>Drop the whole plugin directory into your <code>app/Plugin</code> folder.</li>
 <li>Modify your own <code>Config/database.php</code> file to add a new config called <code>$JDWordpressDB</code> properly setup for your Wordpress database.</li>
 <li>Modify your own <code>Config/bootstrap.php</code> file to load the the plugin: `CakePlugin::load(array('JDWordpress' =&gt; array('routes' =&gt; true)));`</li>
-<li>Edit the file <code><a class="el" href="routes_8php.html" title="Part of plugin JDWordpress ">app/Plugin/JDWordpress/Config/routes.php</a></code> so that the constant <code>JDWP_PATH</code> matches the URI path to your blog. <em>This is important</em> because the plugin needs to know where permalinks and such should point to.</li>
+<li>Edit the file <code>app/Plugin/JDWordpress/Config/routes.php</code> so that the constant <code>JDWP_PATH</code> matches the URI path to your blog. <em>This is important</em> because the plugin needs to know where permalinks and such should point to.</li>
 <li>The default views are in <code>JDWordpress/View/JDBlogPosts</code> per convention. They’re pretty spartan, but don’t be in a hurry to replace them. You should instead override them with your own versions in <code>app/View/Plugin/JDWordpress/JDBlogPosts/</code>, per CakePHP convention.</li>
 <li>If you want to use the helper in your views, then add <code>JDWordpress.JDBlogPost</code> to your <code>$helpers</code> array in <code>Controllers/AppController.php</code> or in the individual controllers whose views you want the helper available.</li>
 <li><p class="startli">If you want to use the component then add the component to your <code>$components</code> array in <code>Controllers/AppController.php</code> or in the individual controllers whose views you want to populate with data. Use this format for adding the component:</p>
@@ -88,7 +90,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>Later (advanced) you’ll probably want to make changes to the file in <code><a class="el" href="JDBlogPostDataComponent_8php.html" title="Part of plugin JDWordpress ">JDWordpress/Controller/Component/JDBlogPostDataComponent.php</a></code>. It’s not really configuration per se, but if you get tired of setting CSS classes for the plugin in your code per step 7, you can set the defaults in this file. Really, don’t worry about it for now.</li>
 </ol>
 <h2>Quick Start </h2>
-<p>Note than in step 4, the default is “blog” and that’s how I will refer to the URI path for the rest of these instructions. Also let’s assume that you already have at least a few published posts available in your Wordpress database.</p>
+<p>Note than in step 4, the default is “blog” and that’s how I will refer to the URI path for the rest of these instructions. Also let’s assume that you already have at least a few published posts available in your WordPress database.</p>
 <p>Try visiting these new sections of your site:</p>
 <ol type="1">
 <li><a href="http://www.example.com/blog">http://www.example.com/blog</a></li>
@@ -119,7 +121,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>The source code is fairly well (if unconventionally) documented. Even if you just want to use the Plugin without knowing how it works, take a look at the comments for the methods in the following:</p>
 <ol type="1">
 <li><code><a class="el" href="classJDBlogPostsController.html" title="This class implements all actions for JDWordpress. ">JDBlogPostsController</a></code> which has all of the actions (including <code>requestAction</code> actions) you might employ.</li>
-<li><code><a class="el" href="classJDBlogPostDataComponent.html">JDBlogPostDataComponent</a></code> to see which CSS classes are assigned when using the default views and templates and helpers. It also has all of the component methods for populating your view data. <b>Look at them</b>.</li>
+<li><code><a class="el" href="classJDBlogPostDataComponent.html" title="This class implements a component for including Wordpress data in other controllers&#39; view variables...">JDBlogPostDataComponent</a></code> to see which CSS classes are assigned when using the default views and templates and helpers. It also has all of the component methods for populating your view data. <b>Look at them</b>.</li>
 <li><code><a class="el" href="classJDBlogPostHelper.html" title="This class implements the display helper for the JDWordpress plugin. ">JDBlogPostHelper</a></code> to see which helper methods are available to you.</li>
 </ol>
 <h2>How to use MarkdownExtra </h2>
@@ -144,7 +146,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Feb 16 2014 12:49:39 for JDWordpress by
+    <li class="footer">Generated on Thu Feb 27 2014 16:26:35 for JDMultipage by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

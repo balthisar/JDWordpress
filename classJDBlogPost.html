@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>JDWordpress: JDBlogPost Class Reference</title>
+<title>JDMultipage: JDBlogPost Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,10 +24,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">JDWordpress
+   <div id="projectname">JDMultipage
    &#160;<span id="projectnumber">v.2014-02-11</span>
    </div>
-   <div id="projectbrief">Wordpress display plugin for CakePHP</div>
+   <div id="projectbrief">Multipage plugin for CakePHP</div>
   </td>
  </tr>
  </tbody>
@@ -52,7 +52,8 @@ $(document).ready(function(){initNavTree('classJDBlogPost.html','');});
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
 <div class="title">JDBlogPost Class Reference</div>  </div>
 </div><!--header-->
@@ -72,10 +73,10 @@ Inheritance diagram for JDBlogPost:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6982117e7e449ddb1fb781fa3a05116"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#ab6982117e7e449ddb1fb781fa3a05116">getAllPosts</a> ($addedConditions=[], $limit=-1)</td></tr>
-<tr class="memdesc:ab6982117e7e449ddb1fb781fa3a05116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves and processes all posts using <code>$optionsStandard</code>. If given <code>$addedConditions</code> and/or <code>$limit</code>, then those apply as well (so not really "getAllPosts" if params used).  <a href="#ab6982117e7e449ddb1fb781fa3a05116">More...</a><br/></td></tr>
+<tr class="memdesc:ab6982117e7e449ddb1fb781fa3a05116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves and processes all posts using <code>$optionsStandard</code>; if given <code>$addedConditions</code> and/or <code>$limit</code>, then those apply as well.  <a href="#ab6982117e7e449ddb1fb781fa3a05116">More...</a><br/></td></tr>
 <tr class="separator:ab6982117e7e449ddb1fb781fa3a05116"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5659abe4c7196bfb62068f5e77f4ed8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#ae5659abe4c7196bfb62068f5e77f4ed8">getAllPostsAsArchives</a> ($addedConditions=[], $limit=-1)</td></tr>
-<tr class="memdesc:ae5659abe4c7196bfb62068f5e77f4ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves and processes all posts using <code>$optionsStandard</code>. If given <code>$addedConditions</code> and/or <code>$limit</code>, then those apply as well (so not really "getAllPosts" if params used).  <a href="#ae5659abe4c7196bfb62068f5e77f4ed8">More...</a><br/></td></tr>
+<tr class="memdesc:ae5659abe4c7196bfb62068f5e77f4ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves and processes all posts using <code>$optionsStandard</code>; if given <code>$addedConditions</code> and/or <code>$limit</code>, then those apply as well.  <a href="#ae5659abe4c7196bfb62068f5e77f4ed8">More...</a><br/></td></tr>
 <tr class="separator:ae5659abe4c7196bfb62068f5e77f4ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bfc0421868edb5b6c77b577e84296b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#a9bfc0421868edb5b6c77b577e84296b6">getAllPostsForTaxonomyByTerm</a> ($type= 'category')</td></tr>
 <tr class="memdesc:a9bfc0421868edb5b6c77b577e84296b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of all posts for the given $taxonomy broken down into groups by $term.  <a href="#a9bfc0421868edb5b6c77b577e84296b6">More...</a><br/></td></tr>
@@ -105,7 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a64a54798debbeb76b75ce86e80de3acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves and processes recent posts.  <a href="#a64a54798debbeb76b75ce86e80de3acc">More...</a><br/></td></tr>
 <tr class="separator:a64a54798debbeb76b75ce86e80de3acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95d6c50048973f3d9cb0cb9b7695f254"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#a95d6c50048973f3d9cb0cb9b7695f254">getTaxonomyPosts</a> ($term= 'uncategorized', $type= 'category', $limit=-1)</td></tr>
-<tr class="memdesc:a95d6c50048973f3d9cb0cb9b7695f254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves posts for the taxonomy $term and $type.  <a href="#a95d6c50048973f3d9cb0cb9b7695f254">More...</a><br/></td></tr>
+<tr class="memdesc:a95d6c50048973f3d9cb0cb9b7695f254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves posts for the taxonomy $term and $type; for example can retrieve all posts that have "category" of "news" or all posts with "post_tag" of "cool".  <a href="#a95d6c50048973f3d9cb0cb9b7695f254">More...</a><br/></td></tr>
 <tr class="separator:a95d6c50048973f3d9cb0cb9b7695f254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebf9b8f5b9a2694a35f9b83c4673618f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#aebf9b8f5b9a2694a35f9b83c4673618f">getTaxonomyPostsAsArchives</a> ($term= 'uncategorized', $type= 'category', $limit=-1)</td></tr>
 <tr class="memdesc:aebf9b8f5b9a2694a35f9b83c4673618f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves posts for the taxonomy $term and $type.  <a href="#aebf9b8f5b9a2694a35f9b83c4673618f">More...</a><br/></td></tr>
@@ -113,6 +114,35 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a76dc337af560ffa50385376c437c4069"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#a76dc337af560ffa50385376c437c4069">getTermsForTaxonomy</a> ($type= 'category')</td></tr>
 <tr class="memdesc:a76dc337af560ffa50385376c437c4069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a list of all terms for the given taxonomy.  <a href="#a76dc337af560ffa50385376c437c4069">More...</a><br/></td></tr>
 <tr class="separator:a76dc337af560ffa50385376c437c4069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13fad18f0f07290f0c1fd3d4b425db5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13fad18f0f07290f0c1fd3d4b425db5c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#a13fad18f0f07290f0c1fd3d4b425db5c">prepareSQLDump</a> ()</td></tr>
+<tr class="memdesc:a13fad18f0f07290f0c1fd3d4b425db5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the SQL database to a file and returns a reference to the filename so that it may be downloaded. <br/></td></tr>
+<tr class="separator:a13fad18f0f07290f0c1fd3d4b425db5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a1578683643768f402aa354aabf0c1c31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#a1578683643768f402aa354aabf0c1c31">$belongsTo</a></td></tr>
+<tr class="memdesc:a1578683643768f402aa354aabf0c1c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">CakePHP standard.  <a href="#a1578683643768f402aa354aabf0c1c31">More...</a><br/></td></tr>
+<tr class="separator:a1578683643768f402aa354aabf0c1c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ce857446952a805d9ac738453eb09dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ce857446952a805d9ac738453eb09dd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#a6ce857446952a805d9ac738453eb09dd">$displayField</a> = 'post_name'</td></tr>
+<tr class="memdesc:a6ce857446952a805d9ac738453eb09dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">CakePHP standard. <br/></td></tr>
+<tr class="separator:a6ce857446952a805d9ac738453eb09dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d0f3c3de8ac827c9d513b70d8f47a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#a20d0f3c3de8ac827c9d513b70d8f47a6">$order</a></td></tr>
+<tr class="memdesc:a20d0f3c3de8ac827c9d513b70d8f47a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">CakePHP standard.  <a href="#a20d0f3c3de8ac827c9d513b70d8f47a6">More...</a><br/></td></tr>
+<tr class="separator:a20d0f3c3de8ac827c9d513b70d8f47a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a927b0256b942a3ee89485f2649af7981"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a927b0256b942a3ee89485f2649af7981"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#a927b0256b942a3ee89485f2649af7981">$primaryKey</a> = 'ID'</td></tr>
+<tr class="memdesc:a927b0256b942a3ee89485f2649af7981"><td class="mdescLeft">&#160;</td><td class="mdescRight">CakePHP standard. <br/></td></tr>
+<tr class="separator:a927b0256b942a3ee89485f2649af7981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e2b18e53355b24d337026fb45e56dda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e2b18e53355b24d337026fb45e56dda"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#a8e2b18e53355b24d337026fb45e56dda">$useDbConfig</a> = 'JDWordpressDB'</td></tr>
+<tr class="memdesc:a8e2b18e53355b24d337026fb45e56dda"><td class="mdescLeft">&#160;</td><td class="mdescRight">CakePHP standard. <br/></td></tr>
+<tr class="separator:a8e2b18e53355b24d337026fb45e56dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e14b6232ac8c46228003d19140f1831"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e14b6232ac8c46228003d19140f1831"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPost.html#a9e14b6232ac8c46228003d19140f1831">$useTable</a> = 'posts'</td></tr>
+<tr class="memdesc:a9e14b6232ac8c46228003d19140f1831"><td class="mdescLeft">&#160;</td><td class="mdescRight">CakePHP standard. <br/></td></tr>
+<tr class="separator:a9e14b6232ac8c46228003d19140f1831"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This file represents the interface to posts. </p>
@@ -138,7 +168,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the post content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the post content and details. </dd></dl>
 
 </div>
 </div>
@@ -150,7 +180,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">getAllPosts </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$addedConditions</em> = <code>[]</code>, </td>
+          <td class="paramname"><em>$addedConditions</em> = <code>[&#160;]</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -166,7 +196,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves and processes all posts using <code>$optionsStandard</code>. If given <code>$addedConditions</code> and/or <code>$limit</code>, then those apply as well (so not really "getAllPosts" if params used). </p>
+<p>Retrieves and processes all posts using <code>$optionsStandard</code>; if given <code>$addedConditions</code> and/or <code>$limit</code>, then those apply as well. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$addedConditions</td><td>CakePHP conditions array to add. </td></tr>
@@ -174,7 +204,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the posts content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the posts content and details. </dd></dl>
 
 </div>
 </div>
@@ -186,7 +216,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">getAllPostsAsArchives </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$addedConditions</em> = <code>[]</code>, </td>
+          <td class="paramname"><em>$addedConditions</em> = <code>[&#160;]</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -202,7 +232,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves and processes all posts using <code>$optionsStandard</code>. If given <code>$addedConditions</code> and/or <code>$limit</code>, then those apply as well (so not really "getAllPosts" if params used). </p>
+<p>Retrieves and processes all posts using <code>$optionsStandard</code>; if given <code>$addedConditions</code> and/or <code>$limit</code>, then those apply as well. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$addedConditions</td><td>CakePHP conditions array to add. </td></tr>
@@ -210,7 +240,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the posts content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the posts content and details. </dd></dl>
 
 </div>
 </div>
@@ -231,11 +261,11 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves and processes recent posts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">Integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
+    <tr><td class="paramtype">integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the posts content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the posts content and details. </dd></dl>
 
 </div>
 </div>
@@ -256,11 +286,11 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves and processes recent posts. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">Integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
+    <tr><td class="paramtype">integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the posts content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the posts content and details. </dd></dl>
 
 </div>
 </div>
@@ -281,11 +311,11 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves and processes a random post. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">Integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
+    <tr><td class="paramtype">integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the posts content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the posts content and details. </dd></dl>
 
 </div>
 </div>
@@ -306,11 +336,11 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves and processes a random post. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">Integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
+    <tr><td class="paramtype">integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the posts content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the posts content and details. </dd></dl>
 
 </div>
 </div>
@@ -341,12 +371,12 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves summaries for the author slug $author. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$author</td><td>Author slug. </td></tr>
-    <tr><td class="paramtype">Integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$author</td><td>Author slug. </td></tr>
+    <tr><td class="paramtype">integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the posts content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the posts content and details. </dd></dl>
 
 </div>
 </div>
@@ -377,12 +407,12 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves summaries for the author slug $author. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$author</td><td>Author slug. </td></tr>
-    <tr><td class="paramtype">Integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$author</td><td>Author slug. </td></tr>
+    <tr><td class="paramtype">integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the posts content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the posts content and details. </dd></dl>
 
 </div>
 </div>
@@ -416,17 +446,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieves posts for the taxonomy $term and $type. </p>
-<p>For example can retrieve all posts that have "category" of "news" or all posts with "post_tag" of "cool".</p>
+<p>Retrieves posts for the taxonomy $term and $type; for example can retrieve all posts that have "category" of "news" or all posts with "post_tag" of "cool". </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$term</td><td>Taxonomy term. </td></tr>
-    <tr><td class="paramtype">String</td><td class="paramname">$type</td><td>Taxonomy type. </td></tr>
-    <tr><td class="paramtype">Integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$term</td><td>Taxonomy term. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Taxonomy type. </td></tr>
+    <tr><td class="paramtype">integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the posts content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the posts content and details. </dd></dl>
 
 </div>
 </div>
@@ -464,13 +493,13 @@ Public Member Functions</h2></td></tr>
 <p>For example can retrieve all posts that have "category" of "news" or all posts with "post_tag" of "cool".</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$term</td><td>Taxonomy term. </td></tr>
-    <tr><td class="paramtype">String</td><td class="paramname">$type</td><td>Taxonomy type. </td></tr>
-    <tr><td class="paramtype">Integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$term</td><td>Taxonomy term. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Taxonomy type. </td></tr>
+    <tr><td class="paramtype">integer</td><td class="paramname">$limit</td><td>Number of posts to retrieve. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the posts content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the posts content and details. </dd></dl>
 
 </div>
 </div>
@@ -491,11 +520,11 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves a list of all posts for the given $taxonomy broken down into groups by $term. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$type</td><td>Taxonomy type. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Taxonomy type. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the posts content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the posts content and details. </dd></dl>
 
 </div>
 </div>
@@ -516,11 +545,11 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves a list of all terms for the given taxonomy. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$type</td><td>Taxonomy type. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Taxonomy type. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Array structure with the posts content and details. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>array Structure with the posts content and details. </dd></dl>
 
 </div>
 </div>
@@ -541,11 +570,48 @@ Public Member Functions</h2></td></tr>
 <p>Returns the <code>name</code> field given a slug. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$slug</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$slug</td><td></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A string indicating the <code>name</code> field for the slug. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>string Indicating the <code>name</code> field for the slug. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a20d0f3c3de8ac827c9d513b70d8f47a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$order</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        [</div>
+<div class="line">            <span class="stringliteral">&#39;post_date_gmt&#39;</span> =&gt; <span class="stringliteral">&#39;DESC&#39;</span></div>
+</div><!-- fragment -->
+<p>CakePHP standard. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1578683643768f402aa354aabf0c1c31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$belongsTo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">        [</div>
+<div class="line">            <span class="stringliteral">&#39;JDBlogAuthor&#39;</span> =&gt;</div>
+<div class="line">                [</div>
+<div class="line">                    <span class="stringliteral">&#39;className&#39;</span>  =&gt; <span class="stringliteral">&#39;JDWordpress.JDBlogAuthor&#39;</span></div>
+</div><!-- fragment -->
+<p>CakePHP standard. </p>
 
 </div>
 </div>
@@ -558,7 +624,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classJDBlogPost.html">JDBlogPost</a></li>
-    <li class="footer">Generated on Sun Feb 16 2014 12:49:39 for JDWordpress by
+    <li class="footer">Generated on Thu Feb 27 2014 16:26:35 for JDMultipage by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>JDWordpress: JDBlogPostHelper Class Reference</title>
+<title>JDMultipage: JDBlogPostHelper Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,10 +24,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">JDWordpress
+   <div id="projectname">JDMultipage
    &#160;<span id="projectnumber">v.2014-02-11</span>
    </div>
-   <div id="projectbrief">Wordpress display plugin for CakePHP</div>
+   <div id="projectbrief">Multipage plugin for CakePHP</div>
   </td>
  </tr>
  </tbody>
@@ -71,6 +71,10 @@ Inheritance diagram for JDBlogPostHelper:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa4601e83d3bf0e0ec4a1422ec32721cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4601e83d3bf0e0ec4a1422ec32721cc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostHelper.html#aa4601e83d3bf0e0ec4a1422ec32721cc">__construct</a> ($view, $settings=array())</td></tr>
+<tr class="memdesc:aa4601e83d3bf0e0ec4a1422ec32721cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor creates a reference to the component. <br/></td></tr>
+<tr class="separator:aa4601e83d3bf0e0ec4a1422ec32721cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddb95eeed4d174b40b30a66f6044b9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ddb95eeed4d174b40b30a66f6044b9e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostHelper.html#a0ddb95eeed4d174b40b30a66f6044b9e">getOneRandomPost</a> ()</td></tr>
 <tr class="memdesc:a0ddb95eeed4d174b40b30a66f6044b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets one random post. <br/></td></tr>
@@ -81,29 +85,91 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae7080cf67d052780f6e15f1301ff6fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c2ceb822e5f553d06ea754742468f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95c2ceb822e5f553d06ea754742468f4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostHelper.html#a95c2ceb822e5f553d06ea754742468f4">tocArticlesWithDateHeaders</a> ($slug= '')</td></tr>
-<tr class="memdesc:a95c2ceb822e5f553d06ea754742468f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will return a toc of all articles &ndash; optionally for <code>$slug</code> only &ndash; broken into year and month. <br/></td></tr>
+<tr class="memdesc:a95c2ceb822e5f553d06ea754742468f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will return a toc of all articles (optionally for <code>$slug</code> only) divided into year and month. <br/></td></tr>
 <tr class="separator:a95c2ceb822e5f553d06ea754742468f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fb01f087ec75e9ba33830a7ea0dbaf1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fb01f087ec75e9ba33830a7ea0dbaf1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostHelper.html#a1fb01f087ec75e9ba33830a7ea0dbaf1">tocForTaxonomyType</a> ($type= 'category')</td></tr>
-<tr class="memdesc:a1fb01f087ec75e9ba33830a7ea0dbaf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all taxonomy types in a &lt;ul&gt; toc format. For example can provide a list of each 'category'. <br/></td></tr>
+<tr class="memdesc:a1fb01f087ec75e9ba33830a7ea0dbaf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all taxonomy types in a <code>\&lt;ul&gt;</code> toc format; for example can provide a list of each 'category'. <br/></td></tr>
 <tr class="separator:a1fb01f087ec75e9ba33830a7ea0dbaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96ada82ea7b2d9512988b8c12817cf5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96ada82ea7b2d9512988b8c12817cf5a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostHelper.html#a96ada82ea7b2d9512988b8c12817cf5a">tocRecent</a> ($slug= '', $limit=5)</td></tr>
-<tr class="memdesc:a96ada82ea7b2d9512988b8c12817cf5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most recent 5 post titles in &lt;ul&gt; format. If an optional |slug| is given then the most recent five post from the slug will be returned, on order of preference for author, category, and post_tag. <br/></td></tr>
+<tr class="memitem:a96ada82ea7b2d9512988b8c12817cf5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostHelper.html#a96ada82ea7b2d9512988b8c12817cf5a">tocRecent</a> ($slug= '', $limit=5)</td></tr>
+<tr class="memdesc:a96ada82ea7b2d9512988b8c12817cf5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most recent 5 post titles in <code>\&lt;ul&gt;</code> format.  <a href="#a96ada82ea7b2d9512988b8c12817cf5a">More...</a><br/></td></tr>
 <tr class="separator:a96ada82ea7b2d9512988b8c12817cf5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62faaa5fc31a39ea070d5b5c11c920e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62faaa5fc31a39ea070d5b5c11c920e2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostHelper.html#a62faaa5fc31a39ea070d5b5c11c920e2">tocRSSForTaxonomyType</a> ($type= 'category')</td></tr>
-<tr class="memdesc:a62faaa5fc31a39ea070d5b5c11c920e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all taxonomy types in a &lt;ul&gt; toc format. For example can provide a list of each 'category'. This provides a list of links to the RSS feeds for each term. <br/></td></tr>
+<tr class="memdesc:a62faaa5fc31a39ea070d5b5c11c920e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all taxonomy types in a <code>\&lt;ul&gt;</code> toc format with RSS links; for example can provide a list of each 'category'. <br/></td></tr>
 <tr class="separator:a62faaa5fc31a39ea070d5b5c11c920e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a6a4049107bb6c2f8f8c27c7492627e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a6a4049107bb6c2f8f8c27c7492627e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostHelper.html#a9a6a4049107bb6c2f8f8c27c7492627e">tocTaxonomyArticles</a> ($type= 'category')</td></tr>
-<tr class="memdesc:a9a6a4049107bb6c2f8f8c27c7492627e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all terms for a specified taxonomy and its article titles in a &lt;ul&gt; toc format. For example can provide a list of all 'category' and articles for each 'category.'. <br/></td></tr>
+<tr class="memitem:a9a6a4049107bb6c2f8f8c27c7492627e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostHelper.html#a9a6a4049107bb6c2f8f8c27c7492627e">tocTaxonomyArticles</a> ($type= 'category')</td></tr>
+<tr class="memdesc:a9a6a4049107bb6c2f8f8c27c7492627e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all terms for a specified taxonomy and its article titles in a <code>\&lt;ul&gt;</code> toc format; for example can provide a list of all 'category' and articles for each 'category.  <a href="#a9a6a4049107bb6c2f8f8c27c7492627e">More...</a><br/></td></tr>
 <tr class="separator:a9a6a4049107bb6c2f8f8c27c7492627e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class implements the display helper for the JDWordpress plugin. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>View/Helper/<a class="el" href="JDBlogPostHelper_8php.html">JDBlogPostHelper.php</a></li>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a96ada82ea7b2d9512988b8c12817cf5a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tocRecent </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$slug</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$limit</em> = <code>5</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the most recent 5 post titles in <code>\&lt;ul&gt;</code> format. </p>
+<p>If an optional |slug| is given then the most recent five posts from the slug will be returned, on order of preference for author, category, and post_tag.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$slug</td><td></td></tr>
+    <tr><td class="paramtype">integer</td><td class="paramname">$limit</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a6a4049107bb6c2f8f8c27c7492627e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tocTaxonomyArticles </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$type</em> = <code>'category'</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Provides a list of all terms for a specified taxonomy and its article titles in a <code>\&lt;ul&gt;</code> toc format; for example can provide a list of all 'category' and articles for each 'category. </p>
+<p>'</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$type</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>mixed </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>view/Helper/<a class="el" href="JDBlogPostHelper_8php.html">JDBlogPostHelper.php</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -111,7 +177,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classJDBlogPostHelper.html">JDBlogPostHelper</a></li>
-    <li class="footer">Generated on Sun Feb 16 2014 12:49:39 for JDWordpress by
+    <li class="footer">Generated on Thu Feb 27 2014 16:26:35 for JDMultipage by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

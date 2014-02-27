@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>JDWordpress: JDBlogPostsController Class Reference</title>
+<title>JDMultipage: JDBlogPostsController Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,10 +24,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">JDWordpress
+   <div id="projectname">JDMultipage
    &#160;<span id="projectnumber">v.2014-02-11</span>
    </div>
-   <div id="projectbrief">Wordpress display plugin for CakePHP</div>
+   <div id="projectbrief">Multipage plugin for CakePHP</div>
   </td>
  </tr>
  </tbody>
@@ -52,13 +52,14 @@ $(document).ready(function(){initNavTree('classJDBlogPostsController.html','');}
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
 <div class="title">JDBlogPostsController Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This class implements all actions for <code>JDWordpress</code>.  
+<p>This class implements all actions for JDWordpress.  
  <a href="classJDBlogPostsController.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for JDBlogPostsController:</div>
@@ -102,9 +103,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:afd5f9c68c0253c2413e17c878b913bd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zips the server's wordpress uploads directory and then sends it to the web browser for download.  <a href="#afd5f9c68c0253c2413e17c878b913bd8">More...</a><br/></td></tr>
 <tr class="separator:afd5f9c68c0253c2413e17c878b913bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71af137421befdda7c192e71719c62f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostsController.html#a71af137421befdda7c192e71719c62f1">dump_sql</a> ()</td></tr>
-<tr class="memdesc:a71af137421befdda7c192e71719c62f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps the MySQL database that this controller's model is attached to and then serve the file as a download.  <a href="#a71af137421befdda7c192e71719c62f1">More...</a><br/></td></tr>
+<tr class="memdesc:a71af137421befdda7c192e71719c62f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps the MySQL database that this controller's model is attached to and then serve the file as a download,.  <a href="#a71af137421befdda7c192e71719c62f1">More...</a><br/></td></tr>
 <tr class="separator:a71af137421befdda7c192e71719c62f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Methods intended to be used via `requestAction`.</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>SUPPORTING PIECES These are actions that should only ever be used with requestAction.</p>
+<p>HOWEVER, if an exception is pending requestAction can trigger rending of the exception's page immediately, so that's another good reason to avoid requestAction. Try using the helper instead. </p>
+</div></td></tr>
 <tr class="memitem:a0ddb95eeed4d174b40b30a66f6044b9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0ddb95eeed4d174b40b30a66f6044b9e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostsController.html#a0ddb95eeed4d174b40b30a66f6044b9e">getOneRandomPost</a> ()</td></tr>
 <tr class="memdesc:a0ddb95eeed4d174b40b30a66f6044b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets one random post. <br/></td></tr>
@@ -115,23 +119,40 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae7080cf67d052780f6e15f1301ff6fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa2268bf12029834c99e9308927c043"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6aa2268bf12029834c99e9308927c043"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostsController.html#a6aa2268bf12029834c99e9308927c043">tocArticlesWithDateHeaders</a> ()</td></tr>
-<tr class="memdesc:a6aa2268bf12029834c99e9308927c043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will return a toc of all articles &ndash; optionally for $slug only &ndash; broken into year and month. <br/></td></tr>
+<tr class="memdesc:a6aa2268bf12029834c99e9308927c043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will return a toc of all articles (optionally for $slug only) divided into year and month. <br/></td></tr>
 <tr class="separator:a6aa2268bf12029834c99e9308927c043"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeef9dfc43bf56f66ac2e9fee0b7514b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostsController.html#aeef9dfc43bf56f66ac2e9fee0b7514b7">tocForTaxonomyType</a> ()</td></tr>
-<tr class="memdesc:aeef9dfc43bf56f66ac2e9fee0b7514b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all taxonomy types in a &lt;ul&gt; toc format.  <a href="#aeef9dfc43bf56f66ac2e9fee0b7514b7">More...</a><br/></td></tr>
+<tr class="memitem:aeef9dfc43bf56f66ac2e9fee0b7514b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeef9dfc43bf56f66ac2e9fee0b7514b7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostsController.html#aeef9dfc43bf56f66ac2e9fee0b7514b7">tocForTaxonomyType</a> ()</td></tr>
+<tr class="memdesc:aeef9dfc43bf56f66ac2e9fee0b7514b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all taxonomy types in a <code>\&lt;ul&gt;</code> toc format; for example can provide a list of each 'category'. <br/></td></tr>
 <tr class="separator:aeef9dfc43bf56f66ac2e9fee0b7514b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c08b69d12af364ea1c0da46e0f25cb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostsController.html#a8c08b69d12af364ea1c0da46e0f25cb6">tocRSSForTaxonomyType</a> ()</td></tr>
-<tr class="memdesc:a8c08b69d12af364ea1c0da46e0f25cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all taxonomy types in a &lt;ul&gt; toc format.  <a href="#a8c08b69d12af364ea1c0da46e0f25cb6">More...</a><br/></td></tr>
+<tr class="memitem:a8c08b69d12af364ea1c0da46e0f25cb6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c08b69d12af364ea1c0da46e0f25cb6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostsController.html#a8c08b69d12af364ea1c0da46e0f25cb6">tocRSSForTaxonomyType</a> ()</td></tr>
+<tr class="memdesc:a8c08b69d12af364ea1c0da46e0f25cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all taxonomy types in a <code>\&lt;ul&gt;</code> toc format with links to RSS feeds; for example can provide a list of each 'category'. <br/></td></tr>
 <tr class="separator:a8c08b69d12af364ea1c0da46e0f25cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06a80f82cabbfd454f521eb87aabf315"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostsController.html#a06a80f82cabbfd454f521eb87aabf315">tocRecent</a> ()</td></tr>
-<tr class="memdesc:a06a80f82cabbfd454f521eb87aabf315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most recent 5 post titles in &lt;ul&gt; format.  <a href="#a06a80f82cabbfd454f521eb87aabf315">More...</a><br/></td></tr>
+<tr class="memdesc:a06a80f82cabbfd454f521eb87aabf315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most recent 5 post titles in <code>\&lt;ul&gt;</code> format.  <a href="#a06a80f82cabbfd454f521eb87aabf315">More...</a><br/></td></tr>
 <tr class="separator:a06a80f82cabbfd454f521eb87aabf315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47244b184d19cce49caec0f5e9948695"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostsController.html#a47244b184d19cce49caec0f5e9948695">tocTaxonomyArticles</a> ()</td></tr>
-<tr class="memdesc:a47244b184d19cce49caec0f5e9948695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all terms for a specified taxonomy and its article titles in a &lt;ul&gt; toc format.  <a href="#a47244b184d19cce49caec0f5e9948695">More...</a><br/></td></tr>
+<tr class="memdesc:a47244b184d19cce49caec0f5e9948695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all terms for a specified taxonomy and its article titles in a <code>\&lt;ul&gt;</code> toc format; for example can provide a list of all 'category' and articles for each 'category.  <a href="#a47244b184d19cce49caec0f5e9948695">More...</a><br/></td></tr>
 <tr class="separator:a47244b184d19cce49caec0f5e9948695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a2409c247baf67a1d4c6b9a1789cfc088"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2409c247baf67a1d4c6b9a1789cfc088"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostsController.html#a2409c247baf67a1d4c6b9a1789cfc088">$components</a> = array( 'JDWordpress.Zip', 'JDWordpress.JDBlogPostData' )</td></tr>
+<tr class="memdesc:a2409c247baf67a1d4c6b9a1789cfc088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Components to use. <br/></td></tr>
+<tr class="separator:a2409c247baf67a1d4c6b9a1789cfc088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeccfcd4e2765b8469c41f93ec023ee9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeccfcd4e2765b8469c41f93ec023ee9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostsController.html#aeeccfcd4e2765b8469c41f93ec023ee9">$helpers</a> = array( 'Rss' =&gt; array( 'className' =&gt; 'JDWordpress.FixedRss' ) )</td></tr>
+<tr class="memdesc:aeeccfcd4e2765b8469c41f93ec023ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helpers to use. <br/></td></tr>
+<tr class="separator:aeeccfcd4e2765b8469c41f93ec023ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0d08e73a90b9443ce37506b7c6a544"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b0d08e73a90b9443ce37506b7c6a544"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostsController.html#a2b0d08e73a90b9443ce37506b7c6a544">$layout</a> = 'default'</td></tr>
+<tr class="memdesc:a2b0d08e73a90b9443ce37506b7c6a544"><td class="mdescLeft">&#160;</td><td class="mdescRight">You probably don’t want to use the default CakePHP layout. <br/></td></tr>
+<tr class="separator:a2b0d08e73a90b9443ce37506b7c6a544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class implements all actions for <code>JDWordpress</code>. </p>
+<div class="textblock"><p>This class implements all actions for JDWordpress. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a149eb92716c1084a935e04a8d95f7347"></a>
 <div class="memitem">
@@ -203,7 +224,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Zips the server's wordpress uploads directory and then sends it to the web browser for download. </p>
 <p>This is just a simple means of getting your remote WP data for local development.</p>
-<p>If using the simple built-in security mechanism then this action requires a parameter, e.g., <a href="http://www.mysite.net/blog/dump_wp/secretpassword">http://www.mysite.net/blog/dump_wp/secretpassword</a> </p>
+<p>If using the simple built-in security mechanism then this action requires a parameter, e.g., <code><a href="http://www.mysite.net/blog/dump_wp/secretpassword">http://www.mysite.net/blog/dump_wp/secretpassword</a></code> </p>
 
 </div>
 </div>
@@ -220,45 +241,9 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Dumps the MySQL database that this controller's model is attached to and then serve the file as a download. </p>
+<p>Dumps the MySQL database that this controller's model is attached to and then serve the file as a download,. </p>
 <p>This is just a simple means of getting your remote WP data for local development.</p>
-<p>If using the simple built-in security mechanism then this action requires a parameter, e.g., <a href="http://www.mysite.net/blog/dump_sql/secretpassword">http://www.mysite.net/blog/dump_sql/secretpassword</a> </p>
-
-</div>
-</div>
-<a class="anchor" id="aeef9dfc43bf56f66ac2e9fee0b7514b7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">tocForTaxonomyType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Provides a list of all taxonomy types in a &lt;ul&gt; toc format. </p>
-<p>For example can provide a list of each 'category'. </p>
-
-</div>
-</div>
-<a class="anchor" id="a8c08b69d12af364ea1c0da46e0f25cb6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">tocRSSForTaxonomyType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Provides a list of all taxonomy types in a &lt;ul&gt; toc format. </p>
-<p>For example can provide a list of each 'category'. This provides a list of links to the RSS feeds for each term. </p>
+<p>If using the simple built-in security mechanism then this action requires a parameter, e.g., <code><a href="http://www.mysite.net/blog/dump_sql/secretpassword">http://www.mysite.net/blog/dump_sql/secretpassword</a></code> </p>
 
 </div>
 </div>
@@ -275,8 +260,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the most recent 5 post titles in &lt;ul&gt; format. </p>
-<p>If an optional |slug| is given then the most recent five post from the slug will be returned, on order of preference for author, category, and post_tag. </p>
+<p>Returns the most recent 5 post titles in <code>\&lt;ul&gt;</code> format. </p>
+<p>If an optional |slug| is given then the most recent five posts from the slug will be returned, on order of preference for author, category, and post_tag. </p>
 
 </div>
 </div>
@@ -293,13 +278,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Provides a list of all terms for a specified taxonomy and its article titles in a &lt;ul&gt; toc format. </p>
-<p>For example can provide a list of all 'category' and articles for each 'category.' </p>
+<p>Provides a list of all terms for a specified taxonomy and its article titles in a <code>\&lt;ul&gt;</code> toc format; for example can provide a list of all 'category' and articles for each 'category. </p>
+<p>' </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Controller/<a class="el" href="JDBlogPostsController_8php.html">JDBlogPostsController.php</a></li>
+<li>controller/<a class="el" href="JDBlogPostsController_8php.html">JDBlogPostsController.php</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -307,7 +292,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classJDBlogPostsController.html">JDBlogPostsController</a></li>
-    <li class="footer">Generated on Sun Feb 16 2014 12:49:39 for JDWordpress by
+    <li class="footer">Generated on Thu Feb 27 2014 16:26:35 for JDMultipage by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

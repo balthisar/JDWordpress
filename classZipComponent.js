@@ -1,6 +1,7 @@
 var classZipComponent =
 [
     [ "__construct", "classZipComponent.html#a5f320005bcc303d238c509d4b6407c91", null ],
+    [ "__get", "classZipComponent.html#a34f22cbd4c64274651c71577295f7161", null ],
     [ "addFile", "classZipComponent.html#a91cadf43000105ae4f3f38754b884c09", null ],
     [ "begin", "classZipComponent.html#a0ae684b74270db72bbb470612dc1b39f", null ],
     [ "close", "classZipComponent.html#aa69c8bf1f1dcf4e72552efff1fe3e87e", null ],

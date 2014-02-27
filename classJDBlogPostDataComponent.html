@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>JDWordpress: JDBlogPostDataComponent Class Reference</title>
+<title>JDMultipage: JDBlogPostDataComponent Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,10 +24,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">JDWordpress
+   <div id="projectname">JDMultipage
    &#160;<span id="projectnumber">v.2014-02-11</span>
    </div>
-   <div id="projectbrief">Wordpress display plugin for CakePHP</div>
+   <div id="projectbrief">Multipage plugin for CakePHP</div>
   </td>
  </tr>
  </tbody>
@@ -58,6 +58,9 @@ $(document).ready(function(){initNavTree('classJDBlogPostDataComponent.html','')
 <div class="title">JDBlogPostDataComponent Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class implements a component for including Wordpress data in other controllers' view variables.  
+ <a href="classJDBlogPostDataComponent.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for JDBlogPostDataComponent:</div>
 <div class="dyncontent">
@@ -79,24 +82,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae7080cf67d052780f6e15f1301ff6fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sitemap body (only) so that other controllers might compile the results into a full sitemap.  <a href="#ae7080cf67d052780f6e15f1301ff6fe9">More...</a><br/></td></tr>
 <tr class="separator:ae7080cf67d052780f6e15f1301ff6fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c2ceb822e5f553d06ea754742468f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostDataComponent.html#a95c2ceb822e5f553d06ea754742468f4">tocArticlesWithDateHeaders</a> ($slug= '')</td></tr>
-<tr class="memdesc:a95c2ceb822e5f553d06ea754742468f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will return a toc of all articles &ndash; optionally for <code>$slug</code> only &ndash; broken into year and month.  <a href="#a95c2ceb822e5f553d06ea754742468f4">More...</a><br/></td></tr>
+<tr class="memdesc:a95c2ceb822e5f553d06ea754742468f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will return a toc of all articles (optionally for <code>$slug</code> only) divided into year and month.  <a href="#a95c2ceb822e5f553d06ea754742468f4">More...</a><br/></td></tr>
 <tr class="separator:a95c2ceb822e5f553d06ea754742468f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fb01f087ec75e9ba33830a7ea0dbaf1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostDataComponent.html#a1fb01f087ec75e9ba33830a7ea0dbaf1">tocForTaxonomyType</a> ($type= 'category')</td></tr>
-<tr class="memdesc:a1fb01f087ec75e9ba33830a7ea0dbaf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all taxonomy types in a <code>\&lt;ul&gt;</code> toc format. For example it can provide a list of each 'category'.  <a href="#a1fb01f087ec75e9ba33830a7ea0dbaf1">More...</a><br/></td></tr>
+<tr class="memdesc:a1fb01f087ec75e9ba33830a7ea0dbaf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all taxonomy types in a <code>\&lt;ul&gt;</code> toc format; for example it can provide a list of each 'category'.  <a href="#a1fb01f087ec75e9ba33830a7ea0dbaf1">More...</a><br/></td></tr>
 <tr class="separator:a1fb01f087ec75e9ba33830a7ea0dbaf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96ada82ea7b2d9512988b8c12817cf5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostDataComponent.html#a96ada82ea7b2d9512988b8c12817cf5a">tocRecent</a> ($slug= '', $limit=5)</td></tr>
-<tr class="memdesc:a96ada82ea7b2d9512988b8c12817cf5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most recent 5 post titles in <code>\&lt;ul&gt;</code> format. If an optional <code>$slug</code> is given then the most recent five posts from the slug will be returned, on order of preference for author, category, and post_tag. Optional |$limit| can change the number of post titles returned.  <a href="#a96ada82ea7b2d9512988b8c12817cf5a">More...</a><br/></td></tr>
+<tr class="memdesc:a96ada82ea7b2d9512988b8c12817cf5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the most recent 5 post titles in <code>\&lt;ul&gt;</code> format.  <a href="#a96ada82ea7b2d9512988b8c12817cf5a">More...</a><br/></td></tr>
 <tr class="separator:a96ada82ea7b2d9512988b8c12817cf5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62faaa5fc31a39ea070d5b5c11c920e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostDataComponent.html#a62faaa5fc31a39ea070d5b5c11c920e2">tocRSSForTaxonomyType</a> ($type= 'category')</td></tr>
-<tr class="memdesc:a62faaa5fc31a39ea070d5b5c11c920e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all taxonomy types in a <code>\&lt;ul&gt;</code> toc format. For example can provide a list of each 'category'. This provides a list of links to the RSS feeds for each term.  <a href="#a62faaa5fc31a39ea070d5b5c11c920e2">More...</a><br/></td></tr>
+<tr class="memdesc:a62faaa5fc31a39ea070d5b5c11c920e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all taxonomy types in a <code>\&lt;ul&gt;</code> toc format linking to RSS feeds; for example can provide a list of each 'category'.  <a href="#a62faaa5fc31a39ea070d5b5c11c920e2">More...</a><br/></td></tr>
 <tr class="separator:a62faaa5fc31a39ea070d5b5c11c920e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a6a4049107bb6c2f8f8c27c7492627e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostDataComponent.html#a9a6a4049107bb6c2f8f8c27c7492627e">tocTaxonomyArticles</a> ($type= 'category')</td></tr>
-<tr class="memdesc:a9a6a4049107bb6c2f8f8c27c7492627e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all terms for a specified taxonomy and its article titles in a <code>\&lt;ul&gt;</code> toc format. For example can provide a list of all 'category' and articles for each 'category.'.  <a href="#a9a6a4049107bb6c2f8f8c27c7492627e">More...</a><br/></td></tr>
+<tr class="memdesc:a9a6a4049107bb6c2f8f8c27c7492627e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a list of all terms for a specified taxonomy and its article titles in a <code>\&lt;ul&gt;</code> toc format; for example can provide a list of all 'category' with articles for each 'category.  <a href="#a9a6a4049107bb6c2f8f8c27c7492627e">More...</a><br/></td></tr>
 <tr class="separator:a9a6a4049107bb6c2f8f8c27c7492627e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a151b4cb53cf9023599b448e7a67cf38e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJDBlogPostDataComponent.html#a151b4cb53cf9023599b448e7a67cf38e">$jd_vars</a></td></tr>
+<tr class="memdesc:a151b4cb53cf9023599b448e7a67cf38e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This provides a couple of things to all of your views and things rendered by this Plugin.  <a href="#a151b4cb53cf9023599b448e7a67cf38e">More...</a><br/></td></tr>
 <tr class="separator:a151b4cb53cf9023599b448e7a67cf38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -129,8 +133,8 @@ Data Fields</h2></td></tr>
 <p>Create a reference to our model of interest. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$collection</td><td>inherited from super. </td></tr>
-    <tr><td class="paramname">$settings</td><td>inherited from super. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$collection</td><td>inherited from super. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$settings</td><td>inherited from super. </td></tr>
   </table>
   </dd>
 </dl>
@@ -192,16 +196,17 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Will return a toc of all articles &ndash; optionally for <code>$slug</code> only &ndash; broken into year and month. </p>
+<p>Will return a toc of all articles (optionally for <code>$slug</code> only) divided into year and month. </p>
 <ul>
 <li>works with <code>Elements/requestAction/tocArticlesWithDateHeaders</code></li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$slug</td><td>Optional; specify the slug for TOC articles. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$slug</td><td>Optional; specify the slug for TOC articles. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
 </div>
 </div>
@@ -219,7 +224,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Provides a list of all taxonomy types in a <code>\&lt;ul&gt;</code> toc format. For example it can provide a list of each 'category'. </p>
+<p>Provides a list of all taxonomy types in a <code>\&lt;ul&gt;</code> toc format; for example it can provide a list of each 'category'. </p>
 <ul>
 <li>works with <code>Elements/requestAction/tocForTaxonomyType</code></li>
 </ul>
@@ -229,6 +234,7 @@ Data Fields</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
 </div>
 </div>
@@ -246,16 +252,17 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Provides a list of all taxonomy types in a <code>\&lt;ul&gt;</code> toc format. For example can provide a list of each 'category'. This provides a list of links to the RSS feeds for each term. </p>
+<p>Provides a list of all taxonomy types in a <code>\&lt;ul&gt;</code> toc format linking to RSS feeds; for example can provide a list of each 'category'. </p>
 <ul>
 <li>works with <code>Elements/requestAction/tocForTaxonomyType</code></li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$type</td><td>Specify the taxonomy for TOC. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Specify the taxonomy for TOC. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
 </div>
 </div>
@@ -283,17 +290,19 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the most recent 5 post titles in <code>\&lt;ul&gt;</code> format. If an optional <code>$slug</code> is given then the most recent five posts from the slug will be returned, on order of preference for author, category, and post_tag. Optional |$limit| can change the number of post titles returned. </p>
+<p>Returns the most recent 5 post titles in <code>\&lt;ul&gt;</code> format. </p>
+<p>If an optional <code>$slug</code> is given then the most recent five posts from the slug will be returned, on order of preference for author, category, and post_tag. Optional |$limit| can change the number of post titles returned.</p>
 <ul>
 <li>works with Elements/requestAction/tocRecent</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$slug</td><td>Specify the slug for a TOC. </td></tr>
-    <tr><td class="paramtype">Integer</td><td class="paramname">$limit</td><td>Specify the number of TOC entries wanted. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$slug</td><td>Specify the slug for a TOC. </td></tr>
+    <tr><td class="paramtype">integer</td><td class="paramname">$limit</td><td>Specify the number of TOC entries wanted. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
 </div>
 </div>
@@ -311,16 +320,18 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Provides a list of all terms for a specified taxonomy and its article titles in a <code>\&lt;ul&gt;</code> toc format. For example can provide a list of all 'category' and articles for each 'category.'. </p>
+<p>Provides a list of all terms for a specified taxonomy and its article titles in a <code>\&lt;ul&gt;</code> toc format; for example can provide a list of all 'category' with articles for each 'category. </p>
+<p>'</p>
 <ul>
 <li>works with Elements/requestAction/tocTaxonomyArticles</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$type</td><td>Specify the taxonomy for TOC. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Specify the taxonomy for TOC. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
 
 </div>
 </div>
@@ -334,12 +345,14 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This provides a couple of things to all of your views and things rendered by this Plugin. You can permanently modify them here, or override any of the setting by including a <code>jd_vars</code> array in the <code>$settings</code> array in your <code>$components</code> declaration of the controllers that use it. </p>
+
+<p>This provides a couple of things to all of your views and things rendered by this Plugin. </p>
+<p>You can permanently modify them here, or override any of the setting by including a <code>jd_vars</code> array in the <code>$settings</code> array in your <code>$components</code> declaration of the controllers that use it. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Controller/Component/<a class="el" href="JDBlogPostDataComponent_8php.html">JDBlogPostDataComponent.php</a></li>
+<li>controller/component/<a class="el" href="JDBlogPostDataComponent_8php.html">JDBlogPostDataComponent.php</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -347,7 +360,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classJDBlogPostDataComponent.html">JDBlogPostDataComponent</a></li>
-    <li class="footer">Generated on Sun Feb 16 2014 12:49:39 for JDWordpress by
+    <li class="footer">Generated on Thu Feb 27 2014 16:26:35 for JDMultipage by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

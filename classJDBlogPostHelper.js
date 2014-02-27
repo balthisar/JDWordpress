@@ -1,5 +1,6 @@
 var classJDBlogPostHelper =
 [
+    [ "__construct", "classJDBlogPostHelper.html#aa4601e83d3bf0e0ec4a1422ec32721cc", null ],
     [ "getOneRandomPost", "classJDBlogPostHelper.html#a0ddb95eeed4d174b40b30a66f6044b9e", null ],
     [ "getSitemapBody", "classJDBlogPostHelper.html#ae7080cf67d052780f6e15f1301ff6fe9", null ],
     [ "tocArticlesWithDateHeaders", "classJDBlogPostHelper.html#a95c2ceb822e5f553d06ea754742468f4", null ],
