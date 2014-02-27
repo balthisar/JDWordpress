@@ -7,32 +7,32 @@ JDWordpress Plugin for CakePHP
 Purpose
 -------
 
-This plugin lets you integrate your Wordpress database into your CakePHP
-site with minimum effort. It uses none of Wordpress’ functionality to
+This plugin lets you integrate your WordPress database into your CakePHP
+site with minimum effort. It uses none of WordPress’ functionality to
 perform any of its work; it’s completely independent and requires only
-Wordpress’s database.
+WordPress’s database.
 
-Oh, unlike Wordpress, you can write your articles in MarkdownExtra
+Oh, unlike WordPress, you can write your articles in MarkdownExtra
 format. And, if you like, any source code can be syntax highlighted
 with the built-in GeSHi.
 
-Note that there’s currently *not* any support for Wordpress’ comments
+Note that there’s currently *not* any support for WordPress’ comments
 system or user management at all. This is a design feature and not a
 bug or oversight, since presumably you have an existing CakePHP application
 and want to use your own security and user management systems.
 
-Also there’s no support for generating Wordpress content. You should
-use Wordpress and its excellent tools for that, otherwise why have
-Wordpress at all? We’re only interested in showing Wordpress’ data.
+Also there’s no support for generating WordPress content. You should
+use WordPress and its excellent tools for that, otherwise why have
+WordPress at all? We’re only interested in showing WordPress’ data.
 
 
 Some Cool Features
 ------------------
 
-The most prominent feature is that you don’t have to run Wordpress as
+The most prominent feature is that you don’t have to run WordPress as
 your front-end; you can run your CakePHP site and pull in content
 wherever you want it. Because JDWordpress only requires the database
-from Wordpress, you can run Wordpress backend in another directory,
+from WordPress, you can run WordPress backend in another directory,
 subdomain, or even other machine.
 
 Live support for index pages showing all tags, all categories, all
@@ -118,7 +118,7 @@ Quick Start
 
 Note than in step 4, the default is “blog” and that’s how I will refer to the
 URI path for the rest of these instructions. Also let’s assume that you
-already have at least a few published posts available in your Wordpress
+already have at least a few published posts available in your WordPress
 database.
 
 Try visiting these new sections of your site:
