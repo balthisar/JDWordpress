@@ -512,6 +512,10 @@ HIDE_SCOPE_NAMES       = YES
 
 SHOW_INCLUDE_FILES     = YES
 
+# If the SHOW_GROUPED_MEMB_INC tag is set to YES then Doxygen will add for each
+# grouped member an include statement to the documentation, telling the reader
+# which file to include in order to use the member.
+# The default value is: NO.
 
 SHOW_GROUPED_MEMB_INC  = NO
 
@@ -826,8 +830,8 @@ RECURSIVE              = YES
 # run.
 
 EXCLUDE                = Doxyfilter.php \
-                         vendor \
-                         view/Helper/FixedRssHelper.php
+                         Vendor \
+                         View/Helper/FixedRssHelper.php
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded
